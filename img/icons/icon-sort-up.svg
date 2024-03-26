@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <image id="icon-up-dir" class="cls-1" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAgUlEQVQYlX2Q0QrCMAxFz9x0L3uTyXSDBPLg/3+OD8L2JxIJ2rXWCy29N6eBpCGTiXrg1/rc1l3xkMPAOTl12ETdz2Fv4audL8Ax3qfwJWyiHTBln6fIi85XoM1g955/YRPtgfHHsK4x6p/OC1CsMeT5e+jGRAfgXgFTPdJV/RfML7zaCY33/eWNAAAAAElFTkSuQmCC"/>
+</svg>
