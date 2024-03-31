@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин "Девайс"</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="page-header">
-        <nav class="page-header__nav">
-            <a class="page-header__logo">
-                <img src="img/icons/logo-header.svg" alt="Логотип интернет-магазина &laquo;Девайс&raquo;" width="163"
-                    height="35">
-            </a>
-            <div class="page-header__middle-panel">
-                <form method="get" action="#" class="search-form">
-                    <input type="text" name="search" placeholder="Поиск по сайту">
-                    <button type="submit"></button>
-                </form>
-                <ul class="page-header__links">
-                    <li class="page-header__link page-header__link-login">
-                        <a href="#">Войти</a>
-                    </li>
-                    <li class="page-header__link">
-                        <a href="#">Сравнить</a>
-                    </li>
-                    <li class="page-header__link">
-                        <a href="#">Корзина</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-header__bottom-panel">
-                <ul class="page-header__service-links">
-                    <li class="page-header__service-link">
-                        <a href="catalog.html">Каталог товаров</a>
-                    </li>
-                    <li class="page-header__service-link">
-                        <a href="#">Доставка</a>
-                    </li>
-                    <li class="page-header__service-link">
-                        <a href="#">Гарантия</a>
-                    </li>
-                    <li class="page-header__service-link">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="page-header__container">
+            <nav class="page-header__nav">
+                <a class="page-header__logo">
+                    <img src="img/icons/logo-header.svg" alt="Логотип интернет-магазина &laquo;Девайс&raquo;"
+                        width="163" height="35">
+                </a>
+                <div class="page-header__middle-panel">
+                    <form method="get" action="#" class="search-form">
+                        <input type="text" name="search" placeholder="Поиск по сайту">
+                        <button type="submit"></button>
+                    </form>
+                    <ul class="page-header__links">
+                        <li class="page-header__link page-header__link-login">
+                            <a href="#">Войти</a>
+                        </li>
+                        <li class="page-header__link">
+                            <a href="#">Сравнить</a>
+                        </li>
+                        <li class="page-header__link">
+                            <a href="#">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-header__bottom-panel">
+                    <ul class="page-header__service-links">
+                        <li class="page-header__service-link">
+                            <a href="catalog.html">Каталог товаров</a>
+                        </li>
+                        <li class="page-header__service-link">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="page-header__service-link">
+                            <a href="#">Гарантия</a>
+                        </li>
+                        <li class="page-header__service-link">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="promo">
@@ -55,18 +59,18 @@
             <input type="radio" name="slide-number" value="1" checked>
             <input type="radio" name="slide-number" value="2">
             <input type="radio" name="slide-number" value="3">
-            <ol>
-                <li>
+            <ol class="promo__sliders">
+                <li class="promo__slide">
                     <h3>Селфи-палка</h3>
                     <img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486">
                     <p class="promo__lead-paragraph">
                         Делай селфи, как Бен Стиллер!
                     </p>
-                    <p>
+                    <p class="promo__lead-description">
                         Самая длинная палка для селфи доступна в нашем магазине.<br>
                         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                     </p>
-                    <a href="#">Подробнее</a>
+                    <a class="btn-link" href="#">Подробнее</a>
                     <table class="promo__characteristics">
                         <thead>
                             <tr>
@@ -84,16 +88,16 @@
                         </tbody>
                     </table>
                 </li>
-                <li>
+                <li class="promo__slide">
                     <h3>Фитнес-браслет</h3>
                     <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
                     <p class="promo__lead-paragraph">
                         Худеем правильно!
                     </p>
-                    <p>
+                    <p class="promo__lead-description">
                         Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                     </p>
-                    <a href="#">Подробнее</a>
+                    <a class="btn-link" href="#">Подробнее</a>
                     <table class="promo__characteristics">
                         <thead>
                             <tr>
@@ -107,17 +111,17 @@
                         </tbody>
                     </table>
                 </li>
-                <li>
+                <li class="promo__slide">
                     <h3>Квадрокоптер</h3>
                     <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
                     <p class="promo__lead-paragraph">
                         Порхает как бабочка, жалит как пчела!
                     </p>
-                    <p>
+                    <p class="promo__lead-description">
                         Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
                         стандартную камеру.
                     </p>
-                    <a href="#">Подробнее</a>
+                    <a class="btn-link" href="#">Подробнее</a>
                     <table class="promo__characteristics">
                         <thead>
                             <tr>
@@ -180,23 +184,23 @@
             <h2>Сервисы</h2>
             <ul class="services__list">
                 <li class="services__item">
-                    <a href="#">Доставка</a>
+                    <a class="btn-link services__item-active" href="#">Доставка</a>
                 </li>
                 <li class="services__item">
-                    <a href="#">Гарантия</a>
+                    <a class="btn-link" href="#">Гарантия</a>
                 </li>
                 <li class="services__item">
-                    <a href="#">Кредит</a>
+                    <a class="btn-link" href="#">Кредит</a>
                 </li>
             </ul>
-            <section class="delivery">
+            <section class="services__item-content">
                 <h3>Доставка</h3>
                 <p>
                     Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                     Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
             </section>
-            <section class="guarantee">
+            <section class="services__item-content">
                 <h3>Гарантия</h3>
                 <p>
                     Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
@@ -204,7 +208,7 @@
                     Товар, не дом, конечно же.
                 </p>
             </section>
-            <section class="credit">
+            <section class="services__item-content">
                 <h3>Кредит</h3>
                 <p>
                     Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
@@ -261,7 +265,7 @@
                     ЖелДорЭкспедиция
                 </li>
             </ul>
-            <a href="#">Подробнее о нас</a>
+            <a class="btn-link" href="#">Подробнее о нас</a>
         </section>
         <section class="contacts">
             <h2>Контакты</h2>
@@ -274,7 +278,7 @@
                     <img src="img/map.png" alt="Ул. Строителей, 15" width="560" height="222">
                 </a>
             </div>
-            <a href="#">Напишите нам</a>
+            <a class="btn-link" href="#">Напишите нам</a>
         </section>
     </main>
     <footer class="page-footer">
