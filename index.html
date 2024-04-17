@@ -345,6 +345,29 @@
             </div>
         </div>
     </footer>
+    <section class="modal modal-feedback">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="modal-feedback__form" action="#" method="post">
+            <div class="modal-feedback__form-top-panel">
+                <label>
+                    Ваше имя:
+                    <input type="text" name="name" placeholder="Имя Фамилия" required>
+                </label>
+                <label>
+                    Ваш e-mail:
+                    <input type="email" name="email" placeholder="email@example.com" required>
+                </label>
+            </div>
+            <label>
+                Текст письма:
+                <textarea name="content" placeholder="В свободной форме" required></textarea>
+            </label>
+            <input class="btn" type="submit" value="Отправить">
+        </form>
+        <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+        </button>
+    </section>
 </body>
 
 </html>
