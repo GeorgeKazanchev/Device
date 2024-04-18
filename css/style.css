@@ -199,7 +199,7 @@ body {
     margin: 0 auto;
 }
 
-.promo__slide-active {
+.promo__slide-visible {
     display: flex;
 }
 
@@ -213,7 +213,7 @@ body {
 
 .promo__slide-content::before {
     position: absolute;
-    top: 40px;
+    top: 30px;
     right: 0;
     font-size: 180px;
     color: #ffffff;
@@ -221,6 +221,7 @@ body {
 }
 
 .promo__lead-paragraph {
+    position: relative;
     margin: 0;
     margin-top: 45px;
     font-size: 47px;
@@ -298,7 +299,7 @@ body {
     order: -1;
     width: 160px;
     height: 160px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     background-color: #f7e296;
 }
 
