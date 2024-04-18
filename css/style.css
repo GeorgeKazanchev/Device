@@ -334,10 +334,6 @@ body {
     opacity: 1.0;
 }
 
-.categories__item h3:hover {
-    opacity: 0.6;
-}
-
 .categories__item h3:active {
     opacity: 0.3;
 }
