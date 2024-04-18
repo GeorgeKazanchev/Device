@@ -347,18 +347,16 @@
     </footer>
     <section class="modal modal-feedback">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <form class="modal-feedback__form" action="#" method="post">
-            <div class="modal-feedback__form-top-panel">
-                <label>
-                    Ваше имя:
-                    <input type="text" name="name" placeholder="Имя Фамилия" required>
-                </label>
-                <label>
-                    Ваш e-mail:
-                    <input type="email" name="email" placeholder="email@example.com" required>
-                </label>
-            </div>
-            <label>
+        <form class="feedback__form" action="#" method="post">
+            <label class="feedback__form-field">
+                Ваше имя:
+                <input type="text" name="name" placeholder="Имя Фамилия" required>
+            </label>
+            <label class="feedback__form-field">
+                Ваш e-mail:
+                <input type="email" name="email" placeholder="email@example.com" required>
+            </label>
+            <label class="feedback__form-field feedback__form-field-textarea">
                 Текст письма:
                 <textarea name="content" placeholder="В свободной форме" required></textarea>
             </label>

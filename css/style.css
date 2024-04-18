@@ -682,16 +682,24 @@ body {
 
 .modal {
     position: relative;
+    width: 960px;
+    height: 560px;
+    box-sizing: border-box;
+}
+
+.modal-feedback {
+    padding: 100px;
+    box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
 .modal-close {
     position: absolute;
     top: 20px;
-    right: 30px;
+    right: 20px;
     width: 55px;
     height: 55px;
     opacity: 0.5;
-    background-color: #ead17e;
+    background-color: #f0c52e;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -716,10 +724,64 @@ body {
     transform: rotate(-45deg);
 }
 
-.modal-map {
-    width: 960px;
-    height: 560px;
-    margin: 0;
+.feedback__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 40px;
+    width: 760px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.feedback__form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__form-field {
+    width: 360px;
+    box-sizing: border-box;
+}
+
+.feedback__form-field-textarea {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.feedback__form-field-textarea textarea {
+    resize: none;
+    height: 156px;
+    box-sizing: border-box;
+}
+
+.feedback__form input[type="submit"] {
+    margin-top: 50px;
+}
+
+.feedback__form input[type="text"],
+.feedback__form input[type="email"],
+.feedback__form textarea {
+    margin-top: 9px;
+    padding: 15px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.feedback__form input[type="text"],
+.feedback__form input[type="email"] {
+    width: 360px;
+    box-sizing: border-box;
+}
+
+.feedback__form input[type="text"]::placeholder,
+.feedback__form input[type="email"]::placeholder,
+.feedback__form textarea::placeholder {
+    color: rgba(70, 70, 70, 0.4);
 }
 
 .modal-map__map {
