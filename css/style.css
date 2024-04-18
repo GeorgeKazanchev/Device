@@ -576,33 +576,64 @@ body {
     opacity: 0.3;
 }
 
+.page-footer__auth {
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+.page-footer__auth-signout {
+    margin-left: 10px;
+    opacity: 0.3;
+}
+
 .page-footer__links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 10px;
+    max-width: 900px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+.page-footer__auth-signin,
 .page-footer__link {
-    margin-right: 65px;
+    padding-left: 25px;
     opacity: 0.7;
+    cursor: pointer;
 }
 
-.page-footer__link:last-child {
-    margin-right: 0;
-}
-
+.page-footer__auth-signin:hover,
+.page-footer__auth-signout:hover,
 .page-footer__link:hover {
     opacity: 1.0;
 }
 
+.page-footer__auth-signin:active,
+.page-footer__auth-signout:active,
 .page-footer__link:active {
     opacity: 0.3;
 }
 
+.page-footer__auth a,
 .page-footer__link a {
     color: inherit;
     text-decoration: none;
+}
+
+.page-footer__auth-signin {
+    background: url("../img/icons/user-footer.svg") no-repeat 0 center;
+}
+
+.page-footer__link-compare {
+    background: url("../img/icons/compare-footer.svg") no-repeat 0 center;
+}
+
+.page-footer__link-cart {
+    background: url("../img/icons/cart-footer.svg") no-repeat 0 center;
 }
 
 .page-footer__middle-panel {
@@ -618,13 +649,18 @@ body {
 
 .page-footer__service-links {
     display: flex;
-    gap: 35px;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 15px;
+    max-width: 700px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .page-footer__service-link {
+    flex-grow: 1;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
@@ -672,16 +708,20 @@ body {
 
 .page-footer__socials {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 23px;
+    row-gap: 15px;
+    max-width: 300px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .page-footer__social {
+    flex-grow: 1;
     position: relative;
     width: 32px;
     height: 32px;
-    margin-right: 23px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
