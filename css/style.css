@@ -766,6 +766,7 @@ body {
 }
 
 .modal {
+    display: none;
     position: relative;
     width: 960px;
     height: 560px;
