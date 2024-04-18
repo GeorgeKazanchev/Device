@@ -774,6 +774,10 @@ body {
     box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
+.modal-show {
+    display: block;
+}
+
 .modal-feedback {
     padding: 100px;
 }
