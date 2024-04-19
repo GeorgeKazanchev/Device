@@ -154,11 +154,69 @@ body {
     margin-top: 50px;
 }
 
+.page-header__catalog {
+    position: relative;
+}
+
+.page-header__catalog-link {
+    position: relative;
+    color: inherit;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.page-header__catalog-link::after {
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    background: url("../img/icons/plus.svg") no-repeat center center;
+    content: "";
+}
+
+.page-header__catalog-link:hover + .page-header__catalog-menu,
+.page-header__catalog-menu:hover {
+    display: flex;
+}
+
+.page-header__catalog-menu {
+    display: none;
+    position: absolute;
+    column-gap: 70px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.page-header__catalog-menu a {
+    display: block;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 36px;
+    font-family: "Open sans", "Arial", sans-serif;
+    font-weight: 300;
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-header__catalog-menu a:hover {
+    opacity: 0.6;
+}
+
+.page-header__catalog-menu a:active {
+    opacity: 0.3;
+}
+
 .page-header__service-links {
     display: flex;
     justify-content: space-between;
-    width: 1040px;
+    width: 500px;
     margin: 0;
+    margin-left: auto;
     padding: 0;
     list-style: none;
     letter-spacing: 0.1em;
@@ -170,17 +228,14 @@ body {
     text-transform: uppercase;
 }
 
+.page-header__catalog-link:hover,
 .page-header__service-link:hover {
     color: rgba(0, 0, 0, 0.6);
 }
 
+.page-header__catalog-link:active,
 .page-header__service-link:active {
     color: rgba(0, 0, 0, 0.3);
-}
-
-.page-header__service-link:first-child {
-    width: 250px;
-    margin-right: 290px;
 }
 
 .page-header__service-link:last-child {
@@ -191,21 +246,6 @@ body {
 .page-header__service-link a {
     color: inherit;
     text-decoration: none;
-}
-
-.page-header__catalog-link {
-    position: relative;
-}
-
-.page-header__catalog-link::after {
-    position: absolute;
-    top: 2px;
-    right: 35px;
-    width: 20px;
-    height: 20px;
-    opacity: 0.3;
-    background: url("../img/icons/plus.svg") no-repeat center center;
-    content: "";
 }
 
 .btn-link {
