@@ -187,18 +187,26 @@ body {
     position: absolute;
     left: -60px;
     width: 1160px;
+    z-index: 2;
+    background-color: #f7e296;
 }
 
 .page-header__catalog-menu {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 70px;
+    row-gap: 40px;
+    width: 1040px;
     margin: 0;
     padding: 0;
     padding-top: 20px;
     padding-bottom: 25px;
     padding-left: 60px;
     list-style: none;
-    background-color: #f7e296;
+}
+
+.page-header__catalog-menu-column {
+    max-width: 200px;
 }
 
 .page-header__catalog-menu a {
@@ -210,6 +218,8 @@ body {
     font-weight: 300;
     color: inherit;
     text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .page-header__catalog-menu a:hover {
