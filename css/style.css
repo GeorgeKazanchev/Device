@@ -177,19 +177,28 @@ body {
     content: "";
 }
 
-.page-header__catalog-link:hover + .page-header__catalog-menu,
-.page-header__catalog-menu:hover {
-    display: flex;
+.page-header__catalog-link:hover + .page-header__catalog-menu-container,
+.page-header__catalog-menu-container:hover {
+    display: block;
+}
+
+.page-header__catalog-menu-container {
+    display: none;
+    position: absolute;
+    left: -60px;
+    width: 1160px;
 }
 
 .page-header__catalog-menu {
-    display: none;
-    position: absolute;
+    display: flex;
     column-gap: 70px;
     margin: 0;
     padding: 0;
     padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 60px;
     list-style: none;
+    background-color: #f7e296;
 }
 
 .page-header__catalog-menu a {
