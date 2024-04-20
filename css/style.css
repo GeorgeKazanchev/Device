@@ -1180,10 +1180,10 @@ body {
 .products__pagination {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 760px;
     margin-top: 40px;
     margin-left: auto;
-    padding: 30px;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 24px;
@@ -1196,18 +1196,20 @@ body {
     text-decoration: none;
 }
 
-.products__backward,
-.products__forward {
+.products__back,
+.products__next {
+    padding: 20px;
+    box-sizing: border-box;
     letter-spacing: 0.15em;
 }
 
-.products__backward:hover,
-.products__forward:hover {
+.products__back:hover,
+.products__next:hover {
     background-color: #d9d9d9;
 }
 
-.products__backward:active,
-.products__forward:active {
+.products__back:active,
+.products__next:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
