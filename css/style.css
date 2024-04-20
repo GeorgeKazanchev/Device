@@ -268,10 +268,21 @@ body {
 }
 
 .btn-link {
+    padding: 10px 30px;
+    box-sizing: border-box;
     color: inherit;
+    background-image: 
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 40%,
+            #f0c52e 40%,
+            #f0c52e 60%,
+            transparent 60%,
+            transparent 100%);
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
 }
 
 .btn-link:hover,
