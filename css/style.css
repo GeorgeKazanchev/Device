@@ -539,12 +539,12 @@ body {
 
 .section-title {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     font-size: 47px;
     line-height: 48px;
 }
 
-.about-and-contacts-container {
+.about-contacts-container {
     display: flex;
     justify-content: space-between;
     width: 1160px;
@@ -554,7 +554,10 @@ body {
 
 .about,
 .contacts {
+    display: flex;
+    flex-direction: column;
     position: relative;
+    width: 560px;
 }
 
 .about::before,
@@ -568,11 +571,20 @@ body {
     content: "";
 }
 
-.about {
-    width: 464px;
+/* Добавление отступа между последним контентным элементом и кнопкой */
+.about > *:nth-last-child(2),
+.contacts > *:nth-last-child(2) {
+    margin-bottom: 70px;
 }
 
-.about p {
+.about {
+    width: 475px;
+}
+
+.about p,
+.contacts p {
+    margin: 0;
+    margin-top: 30px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -581,24 +593,41 @@ body {
 
 .about__partners {
     margin: 0;
+    margin-top: 50px;
     padding: 0;
     list-style: none;
 }
 
 .about__partner {
+    position: relative;
+    padding-left: 35px;
     font-size: 16px;
     line-height: 40px;
+}
+
+.about__partner::before {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/icons/list-marker.svg") no-repeat center center;
+    content: "";
+}
+
+.btn-link-about-contacts {
+    align-self: flex-start;
+    margin: 0;
+    margin-top: auto;
 }
 
 .contacts {
     width: 562px;
 }
 
-.contacts p {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 30px;
+.contacts__map {
+    margin: 0;
+    margin-top: 40px;
 }
 
 .page-footer {
