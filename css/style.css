@@ -1117,9 +1117,9 @@ body {
 .products__sort {
     display: flex;
     align-items: center;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    min-height: 70px;
     padding-left: 72px;
+    box-sizing: border-box;
     background-color: #ebebeb;
 }
 
@@ -1164,6 +1164,9 @@ body {
 }
 
 .products__sort-criterion a {
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 23px;
     color: inherit;
     text-decoration: none;
 }
