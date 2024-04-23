@@ -1173,6 +1173,12 @@ body {
     text-transform: lowercase;
 }
 
+.filter__form-btn-link {
+    border: none;
+    font: inherit;
+    letter-spacing: 0.15em;
+}
+
 .products {
     width: 835px;
 }
