@@ -290,8 +290,7 @@ body {
     transition: all 0.2s;
 }
 
-.btn-link:hover::before,
-.btn-link:active {
+.btn-link:hover::before {
     top: 0;
     left: 0;
     width: 100%;
@@ -475,34 +474,98 @@ body {
 .services {
     margin: 0 auto;
     margin-top: 145px;
-    padding-bottom: 155px;
+    padding-bottom: 50px;
+    /* padding-bottom: 155px; */
     background-color: #e5e5e5;
 }
 
 .services__container {
-    display: flex;
     width: 1160px;
     margin: 0 auto;
 }
 
+.services__inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    top: -20px;
+    width: 1100px;
+    min-height: 240px;
+}
+
 .services__list {
+    position: relative;
     width: 280px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.services__item a:active,
+.services__list::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 7px;
+    height: calc(100% + 80px);
+    background-color: #000000;
+    content: "";
+}
+
+.services__item {
+    margin-top: 30px;
+}
+
+.services__item:first-child {
+    margin-top: 0;
+}
+
+.services__item a,
+.services__item-active {
+    position: relative;
+    display: block;
+    width: 170px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 .services__item-active {
     color: #f7e184;
     background-color: #000000;
 }
 
+.services__item a:active {
+    color: #f7e184;
+}
+
+.services__item a:active::before,
+.services__item-active::before,
+.services__item-active:hover::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #000000;
+    content: "";
+}
+
 .services__item-content {
     display: none;
     position: relative;
-    width: 438px;
-    margin-left: 115px;
+    width: 695px;
+}
+
+.services__item-content-delivery {
+    background: url("../img/delivery.png") no-repeat top 5px right 5px;
+}
+
+.services__item-content-warranty {
+    background: url("../img/warranty.png") no-repeat top 5px right 5px;
+}
+
+.services__item-content-credit {
+    background: url("../img/credit.png") no-repeat top 5px right 5px;
 }
 
 .services__item-content-active {
@@ -510,13 +573,15 @@ body {
 }
 
 .services__item-content h3 {
-    position: absolute;
-    top: -28px;
+    position: relative;
+    top: -8px;
     margin: 0;
 }
 
 .services__item-content p {
-    margin-top: 60px;
+    /* width: 438px; */
+    width: 425px;
+    margin-top: 30px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 15px;
