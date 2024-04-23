@@ -475,7 +475,6 @@ body {
     margin: 0 auto;
     margin-top: 145px;
     padding-bottom: 50px;
-    /* padding-bottom: 155px; */
     background-color: #e5e5e5;
 }
 
@@ -579,7 +578,6 @@ body {
 }
 
 .services__item-content p {
-    /* width: 438px; */
     width: 425px;
     margin-top: 30px;
     font-family: "Open Sans", "Arial", sans-serif;
