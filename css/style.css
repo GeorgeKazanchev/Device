@@ -177,7 +177,7 @@ body {
     content: "";
 }
 
-.page-header__catalog-link:hover + .page-header__catalog-menu-container,
+.page-header__catalog-link:hover+.page-header__catalog-menu-container,
 .page-header__catalog-menu-container:hover {
     display: block;
 }
@@ -657,8 +657,8 @@ body {
 }
 
 /* Добавление отступа между последним контентным элементом и кнопкой */
-.about > *:nth-last-child(2),
-.contacts > *:nth-last-child(2) {
+.about>*:nth-last-child(2),
+.contacts>*:nth-last-child(2) {
     margin-bottom: 70px;
 }
 
@@ -1238,6 +1238,47 @@ body {
     padding-bottom: 23px;
     color: inherit;
     text-decoration: none;
+}
+
+.products__sort-buttons {
+    display: flex;
+    column-gap: 25px;
+    margin-left: auto;
+}
+
+.products__sort-button+label {
+    display: inline-block;
+    position: relative;
+}
+
+.products__sort-button:focus-visible+label::before {
+    outline: 2px solid #000000;
+    outline-offset: 2px;
+}
+
+.products__sort-button+label::before {
+    position: absolute;
+    top: -5px;
+    left: -12px;
+    width: 12px;
+    height: 10px;
+    content: "";
+}
+
+.products__sort-asc-button+label::before {
+    background: url("../img/icons/sort-up.svg") no-repeat center center;
+}
+
+.products__sort-desc-button+label::before {
+    background: url("../img/icons/sort-down.svg") no-repeat center center;
+}
+
+.products__sort-asc-button:checked+label::before {
+    background: url("../img/icons/sort-up-selected.svg") no-repeat center center;
+}
+
+.products__sort-desc-button:checked+label::before {
+    background: url("../img/icons/sort-down-selected.svg") no-repeat center center;
 }
 
 .products__cards {
