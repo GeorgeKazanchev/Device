@@ -1317,8 +1317,7 @@ body {
     top: 0;
     left: 0;
     width: 360px;
-    height: 380px;
-    margin-top: 170px;
+    padding-top: 170px;
 }
 
 .products__card-services button {
@@ -1336,7 +1335,6 @@ body {
 }
 
 .btn-to-compare {
-    margin-top: 10px;
     font-size: 13px;
     line-height: 36px;
     font-family: "Open Sans", "Arial", sans-serif;
@@ -1362,10 +1360,16 @@ body {
     margin-top: 40px;
 }
 
-.products__card-content h3 {
-    margin: 0;
+.products__card-content a {
     font-size: 18px;
     line-height: 24px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.products__card-content h3 {
+    margin: 0;
+    font: inherit;
 }
 
 .products__card-price {
