@@ -1273,11 +1273,21 @@ body {
     background: url("../img/icons/sort-down.svg") no-repeat center center;
 }
 
-.products__sort-asc-button:checked+label::before {
+.products__sort-asc-button+label:hover::before {
+    background: url("../img/icons/sort-up-hover.svg") no-repeat center center;
+}
+
+.products__sort-desc-button+label:hover::before {
+    background: url("../img/icons/sort-down-hover.svg") no-repeat center center;
+}
+
+.products__sort-asc-button:checked+label::before,
+.products__sort-asc-button+label:active::before {
     background: url("../img/icons/sort-up-selected.svg") no-repeat center center;
 }
 
-.products__sort-desc-button:checked+label::before {
+.products__sort-desc-button:checked+label::before,
+.products__sort-desc-button+label:active::before {
     background: url("../img/icons/sort-down-selected.svg") no-repeat center center;
 }
 
