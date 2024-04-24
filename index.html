@@ -72,10 +72,10 @@
     <main>
         <section class="promo">
             <h2 class="visually-hidden">Промо-товары</h2>
-            <input class="visually-hidden" type="radio" name="slide-number" value="1" checked>
-            <input class="visually-hidden" type="radio" name="slide-number" value="2">
-            <input class="visually-hidden" type="radio" name="slide-number" value="3">
-            <ol class="promo__sliders">
+            <input id="slide-1" class="visually-hidden" type="radio" name="slide-number" value="1" checked>
+            <input id="slide-2" class="visually-hidden" type="radio" name="slide-number" value="2">
+            <input id="slide-3" class="visually-hidden" type="radio" name="slide-number" value="3">
+            <ul class="promo__sliders">
                 <li class="promo__slide promo__slide-visible">
                     <h3 class="visually-hidden">Селфи-палка</h3>
                     <img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486">
@@ -88,7 +88,14 @@
                             Самая длинная палка для селфи доступна в нашем магазине.<br>
                             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                         </p>
-                        <a class="btn-link" href="#">Подробнее</a>
+                        <div class="promo__buttons">
+                            <a class="btn-link" href="#">Подробнее</a>
+                            <div class="promo__slide-switchers">
+                                <label class="promo__slide-switcher promo__slide-switcher-checked" for="slide-1"></label>
+                                <label class="promo__slide-switcher" for="slide-2"></label>
+                                <label class="promo__slide-switcher" for="slide-3"></label>
+                            </div>
+                        </div>
                         <table class="promo__characteristics">
                             <thead>
                                 <tr>
@@ -107,7 +114,7 @@
                         </table>
                     </div>
                 </li>
-                <li class="promo__slide">
+                <li class="promo__slide promo__slide-visible">
                     <h3 class="visually-hidden">Фитнес-браслет</h3>
                     <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
                     <div class="promo__slide-content">
@@ -118,7 +125,14 @@
                         <p class="promo__lead-description">
                             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                         </p>
-                        <a class="btn-link" href="#">Подробнее</a>
+                        <div class="promo__buttons">
+                            <a class="btn-link" href="#">Подробнее</a>
+                            <div class="promo__slide-switchers">
+                                <label class="promo__slide-switcher promo__slide-switcher-checked" for="slide-1"></label>
+                                <label class="promo__slide-switcher" for="slide-2"></label>
+                                <label class="promo__slide-switcher" for="slide-3"></label>
+                            </div>
+                        </div>
                         <table class="promo__characteristics">
                             <thead>
                                 <tr>
@@ -133,7 +147,7 @@
                         </table>
                     </div>
                 </li>
-                <li class="promo__slide">
+                <li class="promo__slide promo__slide-visible">
                     <h3 class="visually-hidden">Квадрокоптер</h3>
                     <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
                     <div class="promo__slide-content">
@@ -145,7 +159,14 @@
                             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
                             стандартную камеру.
                         </p>
-                        <a class="btn-link" href="#">Подробнее</a>
+                        <div class="promo__buttons">
+                            <a class="btn-link" href="#">Подробнее</a>
+                            <div class="promo__slide-switchers">
+                                <label class="promo__slide-switcher promo__slide-switcher-checked" for="slide-1"></label>
+                                <label class="promo__slide-switcher" for="slide-2"></label>
+                                <label class="promo__slide-switcher" for="slide-3"></label>
+                            </div>
+                        </div>
                         <table class="promo__characteristics">
                             <thead>
                                 <tr>
@@ -162,7 +183,7 @@
                         </table>
                     </div>
                 </li>
-            </ol>
+            </ul>
         </section>
         <section class="categories">
             <h2 class="visually-hidden">Категории товаров</h2>

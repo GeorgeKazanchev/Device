@@ -197,6 +197,7 @@ body {
     column-gap: 70px;
     row-gap: 40px;
     width: 1040px;
+    min-height: 118px;
     margin: 0;
     padding: 0;
     padding-top: 20px;
@@ -305,7 +306,7 @@ body {
 .promo {
     width: 1160px;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom, #f7e296 112px, #ffffff 112px);
+    background-image: linear-gradient(to bottom, #f7e296 113px, #ffffff 113px);
     background-repeat: no-repeat;
 }
 
@@ -339,6 +340,16 @@ body {
 
 .promo__slide-content::before {
     position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100px;
+    height: 7px;
+    background-color: #ffffff;
+    content: "";
+}
+
+.promo__slide-content::after {
+    position: absolute;
     top: 30px;
     right: 0;
     font-size: 180px;
@@ -361,6 +372,55 @@ body {
     font-weight: 300;
     font-size: 15px;
     line-height: 30px;
+}
+
+.promo__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo__slide-switchers {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.promo__slide-switcher {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/icons/radio.svg") no-repeat center center;
+}
+
+.promo__slide-switcher:hover {
+    background: url("../img/icons/radio-hover.svg") no-repeat center center;
+}
+
+.promo__slide-switcher:active {
+    background: url("../img/icons/radio.svg") no-repeat center center;
+}
+
+.promo__slide-switcher-checked {
+    background: url("../img/icons/radio-checked.svg") no-repeat center center;
+}
+
+.promo__slide-switcher-checked:hover {
+    background: url("../img/icons/radio-checked-hover.svg") no-repeat center center;
+}
+
+.promo__slide-switcher-checked:active {
+    background: url("../img/icons/radio-checked.svg") no-repeat center center;
+}
+
+.promo__characteristics {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+}
+
+.promo__characteristics th,
+.promo__characteristics td {
+    min-width: 140px;
 }
 
 .promo__characteristics th {
