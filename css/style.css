@@ -1456,8 +1456,26 @@ body {
     margin-right: 0;
 }
 
+.products__card-img-container {
+    position: relative;
+}
+
+.products__card-img-container:hover>.products__card-img-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(238, 238, 238, 0.7);
+    content: "";
+}
+
+.products__card-img-container img {
+    display: block;
+}
+
 .products__card-img-container:hover img {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .products__card-img-container:hover .products__card-services {
