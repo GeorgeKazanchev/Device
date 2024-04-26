@@ -1510,6 +1510,17 @@ body {
     position: relative;
 }
 
+.products__card-new .products__card-img-container::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    background: url("../img/marker-new.png") no-repeat center center;
+    content: "";
+}
+
 .products__card-img-container:hover>.products__card-img-mask {
     position: absolute;
     top: 0;
@@ -1522,6 +1533,7 @@ body {
 
 .products__card-img-container img {
     display: block;
+    position: relative;
 }
 
 .products__card-img-container:hover img {
