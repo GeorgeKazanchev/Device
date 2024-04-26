@@ -1338,28 +1338,108 @@ body {
 .filter__form {
     display: flex;
     flex-direction: column;
+    width: 202px;
+    margin-top: 30px;
 }
 
 .filter__parameter {
+    display: flex;
+    flex-direction: column;
     margin: 0;
+    margin-top: 40px;
     padding: 0;
+    padding-top: 12px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 40px;
     border: none;
+    border-top: 2px solid #000000;
 }
 
-.filter__parameter legend {
+.filter__parameter h3 {
+    margin: 0;
+    padding: 0;
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
 }
 
+.filter__parameter input[type="checkbox"],
+.filter__parameter input[type="radio"] {
+    display: none;
+}
+
 .filter__parameter input[type="checkbox"]:disabled,
 .filter__parameter input[type="radio"]:disabled {
     color: #a6a6a6;
+}
+
+.filter__parameter input[type="checkbox"]+label,
+.filter__parameter input[type="radio"]+label {
+    position: relative;
+    padding-left: 40px;
+}
+
+.filter__parameter input[type="checkbox"]+label::before,
+.filter__parameter input[type="radio"]+label::before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    content: "";
+}
+
+.filter__parameter input[type="checkbox"]+label::before {
+    background: url("../img/icons/checkbox-off.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="checkbox"]:enabled:hover+label::before {
+    background: url("../img/icons/checkbox-off-hover.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="checkbox"]:checked+label::before,
+.filter__parameter input[type="checkbox"]:enabled:active+label::before {
+    background: url("../img/icons/checkbox-on.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="checkbox"]:enabled:checked:hover+label::before {
+    background: url("../img/icons/checkbox-on-hover.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="checkbox"]:enabled:checked:active+label::before {
+    background: url("../img/icons/checkbox-off.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="checkbox"]:disabled+label {
+    opacity: 0.25;
+}
+
+.filter__parameter input[type="radio"]+label::before {
+    background: url("../img/icons/radio-off.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="radio"]:enabled:hover+label::before {
+    background: url("../img/icons/radio-off-hover.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="radio"]:checked+label::before,
+.filter__parameter input[type="radio"]:enabled:active+label::before {
+    background: url("../img/icons/radio-on.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="radio"]:enabled:checked:hover+label::before {
+    background: url("../img/icons/radio-on-hover.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="radio"]:enabled:checked:active+label::before {
+    background: url("../img/icons/radio-off.svg") no-repeat 0 center;
+}
+
+.filter__parameter input[type="radio"]:disabled+label {
+    opacity: 0.25;
 }
 
 .filter__price-range {
@@ -1369,6 +1449,10 @@ body {
     line-height: 24px;
     opacity: 0.2;
     text-transform: lowercase;
+}
+
+.filter-form .btn-submit {
+    margin-top: 30px;
 }
 
 .sort {

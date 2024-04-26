@@ -119,14 +119,14 @@
                 <section class="filter-form">
                     <h2 class="visually-hidden">Фильтрация товаров</h2>
                     <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
-                        <fieldset class="filter__parameter">
-                            <legend>Стоимость</legend>
+                        <div class="filter__parameter">
+                            <h3>Стоимость</h3>
                             <span class="filter__price-range">от 0</span>
                             <input type="range" name="price" value="5000" min="0" max="10000">
                             <span class="filter__price-range">до 5000</span>
-                        </fieldset>
-                        <fieldset class="filter__parameter">
-                            <legend>Цвет</legend>
+                        </div>
+                        <div class="filter__parameter">
+                            <h3>Цвет</h3>
                             <input type="checkbox" name="color" id="color-black" value="black" checked>
                             <label for="color-black">Черный</label>
                             <input type="checkbox" name="color" id="color-white" value="white">
@@ -137,14 +137,14 @@
                             <label for="color-red">Красный</label>
                             <input type="checkbox" name="color" id="color-pink" value="pink">
                             <label for="color-pink">Розовый</label>
-                        </fieldset>
-                        <fieldset class="filter__parameter">
-                            <legend>Bluetooth</legend>
+                        </div>
+                        <div class="filter__parameter">
+                            <h3>Bluetooth</h3>
                             <input type="radio" name="bluetooth" id="bluetooth-field-true" value="true" checked>
                             <label for="bluetooth-field-true">Есть</label>
                             <input type="radio" name="bluetooth" id="bluetooth-field-false" value="false">
                             <label for="bluetooth-field-false">Нет</label>
-                        </fieldset>
+                        </div>
                         <button class="btn btn-submit" type="submit">Показать</button>
                     </form>
                 </section>
