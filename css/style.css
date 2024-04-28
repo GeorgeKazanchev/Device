@@ -20,6 +20,27 @@ body {
     overflow: hidden;
 }
 
+.page-header__logo,
+.page-header__middle-panel,
+.page-header__catalog-link,
+.page-header__service-links,
+.promo__slide img,
+.promo__buttons,
+.categories__item-icon,
+.services__list,
+.partners,
+.btn-about-contacts,
+.contacts__map,
+.catalog-header,
+.filter-form,
+.products__card-img-container,
+.products__pagination,
+.page-footer__top-panel,
+.page-footer__service-links,
+.page-footer__bottom-panel {
+    user-select: none;
+}
+
 .page-header {
     width: 1160px;
     margin: 0 auto;
