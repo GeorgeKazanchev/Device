@@ -375,16 +375,12 @@ body {
 }
 
 .promo__slide {
-    display: none;
+    display: flex;
     counter-increment: item;
 }
 
 .promo__slide img {
     margin: 0 auto;
-}
-
-.promo__slide-visible {
-    display: flex;
 }
 
 .promo__slide-content {

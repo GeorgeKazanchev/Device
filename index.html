@@ -76,7 +76,7 @@
             <input id="slide-2" class="visually-hidden" type="radio" name="slide-number" value="2">
             <input id="slide-3" class="visually-hidden" type="radio" name="slide-number" value="3">
             <ul class="promo__sliders">
-                <li class="promo__slide promo__slide-visible">
+                <li class="promo__slide" data-slide-number="1">
                     <h3 class="visually-hidden">Селфи-палка</h3>
                     <img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486">
                     <div class="promo__slide-content">
@@ -114,7 +114,7 @@
                         </table>
                     </div>
                 </li>
-                <li class="promo__slide">
+                <li class="promo__slide visually-hidden" data-slide-number="2">
                     <h3 class="visually-hidden">Фитнес-браслет</h3>
                     <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
                     <div class="promo__slide-content">
@@ -122,14 +122,14 @@
                             Худеем<br>
                             правильно!
                         </p>
-                        <p class="promo__lead-description">
+                        <p class="content-paragraph promo__lead-description">
                             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                         </p>
                         <div class="promo__buttons">
-                            <a class="btn" href="#">Подробнее</a>
+                            <a class="btn promo__buttons-more" href="#">Подробнее</a>
                             <div class="promo__slide-switchers">
-                                <label class="promo__slide-switcher promo__slide-switcher-checked" for="slide-1"></label>
-                                <label class="promo__slide-switcher" for="slide-2"></label>
+                                <label class="promo__slide-switcher" for="slide-1"></label>
+                                <label class="promo__slide-switcher promo__slide-switcher-checked" for="slide-2"></label>
                                 <label class="promo__slide-switcher" for="slide-3"></label>
                             </div>
                         </div>
@@ -147,7 +147,7 @@
                         </table>
                     </div>
                 </li>
-                <li class="promo__slide">
+                <li class="promo__slide visually-hidden" data-slide-number="3">
                     <h3 class="visually-hidden">Квадрокоптер</h3>
                     <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
                     <div class="promo__slide-content">
@@ -155,16 +155,16 @@
                             Порхает как бабочка,<br>
                             жалит как пчела!
                         </p>
-                        <p class="promo__lead-description">
+                        <p class="content-paragraph promo__lead-description">
                             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
                             стандартную камеру.
                         </p>
                         <div class="promo__buttons">
-                            <a class="btn" href="#">Подробнее</a>
+                            <a class="btn promo__buttons-more" href="#">Подробнее</a>
                             <div class="promo__slide-switchers">
-                                <label class="promo__slide-switcher promo__slide-switcher-checked" for="slide-1"></label>
+                                <label class="promo__slide-switcher" for="slide-1"></label>
                                 <label class="promo__slide-switcher" for="slide-2"></label>
-                                <label class="promo__slide-switcher" for="slide-3"></label>
+                                <label class="promo__slide-switcher promo__slide-switcher-checked" for="slide-3"></label>
                             </div>
                         </div>
                         <table class="promo__characteristics">
@@ -431,6 +431,7 @@
     <script src="js/map-frame-loader.js"></script>
     <script src="js/map-modal-opener.js"></script>
     <script src="js/feedback-form-opener.js"></script>
+    <script src="js/promo-sliders-switcher.js"></script>
 </body>
 
 </html>
