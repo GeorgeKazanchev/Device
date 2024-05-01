@@ -382,6 +382,7 @@ body {
 
 .promo {
     width: 1160px;
+    height: 486px;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, #f7e296 113px, #ffffff 113px);
     background-repeat: no-repeat;
@@ -409,10 +410,18 @@ body {
     width: 510px;
     margin-top: 35px;
     margin-right: 20px;
-    margin-left: auto;
 }
 
 .promo__slide-content::before {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    font-size: 180px;
+    color: #ffffff;
+    content: "0" counter(item);
+}
+
+.promo__slide-content::after {
     position: absolute;
     top: 5px;
     left: 0;
@@ -420,15 +429,6 @@ body {
     height: 7px;
     background-color: #ffffff;
     content: "";
-}
-
-.promo__slide-content::after {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    font-size: 180px;
-    color: #ffffff;
-    content: "0" counter(item);
 }
 
 .promo__lead-paragraph {
@@ -449,8 +449,11 @@ body {
 }
 
 .promo__lead-description {
+    max-height: 120px;
     margin-top: 20px;
     margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .promo__buttons {
