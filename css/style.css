@@ -1309,16 +1309,21 @@ body {
 .catalog-top__container {
     width: 1040px;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 35px;
 }
 
 .catalog-top__container h1 {
     margin: 0;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
 }
 
 .breadcrumbs {
     display: flex;
-    margin-top: 40px;
+    margin-top: 25px;
     gap: 40px;
 }
 
@@ -1365,7 +1370,7 @@ body {
 }
 
 .catalog-header {
-    margin-top: 50px;
+    margin-top: 45px;
     background-color: #ebebeb;
 }
 
@@ -1390,7 +1395,7 @@ body {
 
 .filter-header,
 .filter-form {
-    width: 275px;
+    width: 270px;
     margin-left: auto;
 }
 
@@ -1409,21 +1414,21 @@ body {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
 }
 
 .filter__form {
     display: flex;
     flex-direction: column;
     width: 202px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .filter__parameter {
     display: flex;
     flex-direction: column;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 0;
     padding-top: 12px;
     font-family: "Open Sans", "Arial", sans-serif;
@@ -1441,6 +1446,12 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
+}
+
+.filter__buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
 }
 
 .filter__parameter input[type="checkbox"],
@@ -1522,7 +1533,7 @@ body {
 .price-range-container {
     position: relative;
     width: 195px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .price-range-scale {
@@ -1533,7 +1544,7 @@ body {
 .price-range-bar {
     position: relative;
     left: 0;
-    width: 50%;
+    width: 55%;
     height: 2px;
     background-color: #91c92f;
 }
@@ -1561,11 +1572,12 @@ body {
 }
 
 .price-range-toggle-max {
-    left: 50%;
+    left: 55%;
 }
 
 .filter__price-range {
     position: relative;
+    top: 5px;
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
     font-size: 14px;
@@ -1579,7 +1591,7 @@ body {
 }
 
 .filter__price-range-max {
-    left: 45px;
+    left: 60px;
 }
 
 .filter-form .btn-submit {
@@ -1602,7 +1614,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
 }
 
 .sort-criterions {
@@ -1697,7 +1709,7 @@ body {
 
 .products {
     width: 835px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     background-color: #ffffff;
 }
 
@@ -1807,7 +1819,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 360px;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .products__card-content a {
@@ -1851,20 +1863,17 @@ body {
     text-decoration: none;
 }
 
-.products__back,
-.products__next {
+.products__page-switcher {
     padding: 20px;
     box-sizing: border-box;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
 }
 
-.products__back:hover,
-.products__next:hover {
+.products__page-switcher:hover {
     background-color: #d9d9d9;
 }
 
-.products__back:active,
-.products__next:active {
+.products__page-switcher:active {
     color: rgba(0, 0, 0, 0.3);
 }
 

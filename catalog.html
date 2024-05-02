@@ -133,23 +133,27 @@
                         </div>
                         <div class="filter__parameter">
                             <h3>Цвет</h3>
-                            <input type="checkbox" name="color" id="color-black" value="black" checked>
-                            <label for="color-black">Черный</label>
-                            <input type="checkbox" name="color" id="color-white" value="white">
-                            <label for="color-white">Белый</label>
-                            <input type="checkbox" name="color" id="color-blue" value="blue" checked>
-                            <label for="color-blue">Синий</label>
-                            <input type="checkbox" name="color" id="color-red" value="red" checked>
-                            <label for="color-red">Красный</label>
-                            <input type="checkbox" name="color" id="color-pink" value="pink">
-                            <label for="color-pink">Розовый</label>
+                            <div class="filter__buttons-container">
+                                <input type="checkbox" name="color" id="color-black" value="black" checked>
+                                <label for="color-black">Черный</label>
+                                <input type="checkbox" name="color" id="color-white" value="white">
+                                <label for="color-white">Белый</label>
+                                <input type="checkbox" name="color" id="color-blue" value="blue" checked>
+                                <label for="color-blue">Синий</label>
+                                <input type="checkbox" name="color" id="color-red" value="red" checked>
+                                <label for="color-red">Красный</label>
+                                <input type="checkbox" name="color" id="color-pink" value="pink">
+                                <label for="color-pink">Розовый</label>
+                            </div>
                         </div>
                         <div class="filter__parameter">
                             <h3>Bluetooth</h3>
-                            <input type="radio" name="bluetooth" id="bluetooth-field-true" value="true" checked>
-                            <label for="bluetooth-field-true">Есть</label>
-                            <input type="radio" name="bluetooth" id="bluetooth-field-false" value="false">
-                            <label for="bluetooth-field-false">Нет</label>
+                            <div class="filter__buttons-container">
+                                <input type="radio" name="bluetooth" id="bluetooth-field-true" value="true" checked>
+                                <label for="bluetooth-field-true">Есть</label>
+                                <input type="radio" name="bluetooth" id="bluetooth-field-false" value="false">
+                                <label for="bluetooth-field-false">Нет</label>
+                            </div>
                         </div>
                         <button class="btn btn-submit" type="submit">Показать</button>
                     </form>
@@ -223,7 +227,7 @@
                     </li>
                 </ul>
                 <div class="products__pagination">
-                    <a href="#" class="products__back">Назад</a>
+                    <a href="#" class="products__page-switcher">Назад</a>
                     <ul class="products__pages">
                         <li class="products__page products__page-current">
                             <a href="#" aria-label="Перейти на страницу">1</a>
@@ -235,7 +239,7 @@
                             <a href="#" aria-label="Перейти на страницу">3</a>
                         </li>
                     </ul>
-                    <a href="#" class="products__next">Вперед</a>
+                    <a href="#" class="products__page-switcher">Вперед</a>
                 </div>
             </section>
         </div>
