@@ -1519,13 +1519,67 @@ body {
     opacity: 0.25;
 }
 
+.price-range-container {
+    position: relative;
+    width: 195px;
+    margin-top: 25px;
+}
+
+.price-range-scale {
+    height: 2px;
+    background-color: #dbdbdb;
+}
+
+.price-range-bar {
+    position: relative;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #91c92f;
+}
+
+.price-range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 23px;
+    margin-top: -11px;
+    z-index: 1;
+    background: url("../img/icons/filter-button.svg") no-repeat center center;
+    cursor: pointer;
+}
+
+.price-range-toggle:active {
+    width: 22px;
+    height: 25px;
+    margin-top: -12px;
+    margin-left: -1px;
+    background-size: cover;
+}
+
+.price-range-toggle-min {
+    left: -5px;
+}
+
+.price-range-toggle-max {
+    left: 50%;
+}
+
 .filter__price-range {
+    position: relative;
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
     opacity: 0.2;
     text-transform: lowercase;
+}
+
+.filter__price-range-min {
+    left: 0;
+}
+
+.filter__price-range-max {
+    left: 45px;
 }
 
 .filter-form .btn-submit {

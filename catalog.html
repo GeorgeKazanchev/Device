@@ -121,9 +121,15 @@
                     <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
                         <div class="filter__parameter">
                             <h3>Стоимость</h3>
-                            <span class="filter__price-range">от 0</span>
-                            <input type="range" name="price" value="5000" min="0" max="10000">
-                            <span class="filter__price-range">до 5000</span>
+                            <div class="price-range-container">
+                                <div class="price-range-scale">
+                                    <div class="price-range-bar"></div>
+                                </div>
+                                <div class="price-range-toggle price-range-toggle-min"></div>
+                                <div class="price-range-toggle price-range-toggle-max"></div>
+                                <label class="filter__price-range filter__price-range-min">от 0</label>
+                                <label class="filter__price-range filter__price-range-max">до 5000</label>
+                            </div>
                         </div>
                         <div class="filter__parameter">
                             <h3>Цвет</h3>
