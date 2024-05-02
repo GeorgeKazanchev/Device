@@ -1170,16 +1170,19 @@ body {
 
 .modal-feedback {
     padding: 100px;
+    padding-top: 90px;
 }
 
 .modal-feedback .btn-submit {
-    margin-top: 50px;
+    width: 200px;
+    margin-top: 40px;
+    letter-spacing: 0.2em;
 }
 
 .modal-close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 22px;
+    right: 22px;
     width: 55px;
     height: 55px;
     opacity: 0.5;
@@ -1229,10 +1232,8 @@ body {
 .feedback__form-field {
     display: flex;
     flex-direction: column;
-}
-
-.feedback__form-field {
     width: 360px;
+    margin-top: 5px;
     box-sizing: border-box;
 }
 
@@ -1253,8 +1254,9 @@ body {
 
 .feedback__form-field input,
 .feedback__form-field textarea {
-    margin-top: 9px;
+    margin-top: 5px;
     padding: 15px;
+    padding-left: 20px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
