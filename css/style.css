@@ -510,6 +510,7 @@
 .promo__characteristics th,
 .promo__characteristics td {
     display: inline-block;
+    vertical-align: middle;
     margin-right: 75px;
 }
 
@@ -1670,6 +1671,7 @@
 
 .sort-button+label {
     display: inline-block;
+    vertical-align: middle;
     position: relative;
     cursor: pointer;
 }
