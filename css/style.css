@@ -385,6 +385,7 @@
     width: 1160px;
     height: 486px;
     margin: 0 auto;
+    background-color: #ffffff;
     background-image: linear-gradient(to bottom, #f7e296 113px, #ffffff 113px);
     background-repeat: no-repeat;
 }
