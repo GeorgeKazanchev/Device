@@ -1,22 +1,19 @@
-const switchersLabels = document.querySelectorAll('.promo__slide-switcher');
+const switchers = document.querySelectorAll('.promo__slide-switcher');
 const slides = document.querySelectorAll('.promo__slide');
 
-for (let label of switchersLabels) {
-    label.addEventListener('click', () => {
-        uncheckAllLabels();
+for (let switcher of switchers) {
+    switcher.addEventListener('click', () => {
+        uncheckAllSwitchers();
         hideAllSlides();
         
-        const switcherId = label.getAttribute('for');
-        checkRadioButtonBy(switcherId);
-        checkSwitcherLabels(switcherId);
-        
-        const slideNumber = getSlideNumberBy(switcherId);
+        const slideNumber = getSlideNumberBy(switcher);
+        checkSwitchersBy(slideNumber);
         showSlide(slideNumber);
     });
 }
 
-function uncheckAllLabels () {
-    for (let label of switchersLabels) {
+function uncheckAllSwitchers () {
+    for (let label of switchers) {
         label.classList.remove('promo__slide-switcher-checked');
     }
 }
@@ -27,20 +24,13 @@ function hideAllSlides () {
     }
 }
 
-function checkRadioButtonBy (switcherId) {
-    const switcher = document.getElementById(switcherId);
-    switcher.setAttribute('checked', true);
+function checkSwitchersBy (slideNumber) {
+    const switchersForGivenSlide = [...switchers].filter(sw => sw.getAttribute('data-slide-number') === slideNumber);
+    switchersForGivenSlide.forEach(sw => sw.classList.add('promo__slide-switcher-checked'));
 }
 
-function checkSwitcherLabels (switcherId) {
-    const labels = document.querySelectorAll(`.promo__slide-switcher[for="${switcherId}"]`);
-    for (let label of labels) {
-        label.classList.add('promo__slide-switcher-checked');
-    }
-}
-
-function getSlideNumberBy (switcherId) {
-    return switcherId.split('-')[1];
+function getSlideNumberBy (switcher) {
+    return switcher.getAttribute('data-slide-number');
 }
 
 function showSlide (slideNumber) {

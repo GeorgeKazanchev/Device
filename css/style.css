@@ -486,6 +486,12 @@
     width: 13px;
     height: 13px;
     background: url("../img/icons/radio.svg") no-repeat center center;
+    border: none;
+    border-radius: 50%;
+}
+
+.promo__slide-switcher:focus-visible {
+    outline: 2px solid #000000;
 }
 
 .promo__slide-switcher:hover {
