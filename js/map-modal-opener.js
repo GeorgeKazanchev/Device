@@ -10,9 +10,22 @@
         modal.classList.add('modal-show');
     });
 
-    closeButton.addEventListener('click', (evt) => {
-        evt.preventDefault();
+    const closeModal = () => {
         modalWrapper.classList.remove('modal-wrapper-show');
         modal.classList.remove('modal-show');
+    };
+
+    closeButton.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        closeModal();
+    });
+
+    window.addEventListener('keydown', (evt) => {
+        if (evt.key === 'Escape') {
+            if (modal.classList.contains('modal-show')) {
+                evt.preventDefault();
+                closeModal();
+            }
+        }
     });
 })();
